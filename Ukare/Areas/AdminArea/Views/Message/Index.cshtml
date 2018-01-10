@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Ukare.Service.Message.MessageModel>
+    @using GridMvc.Html
+    @{
+        Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+        ViewBag.Title = "Users";
+    }
+
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.js")"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="content-wrapper" style="min-height: 750px;">
+                <section class="content-header">
+                    <div class="col-md-6 col-sm-6"><h3 class="use-titl">Messages Information</h3></div>
+                    @if (HttpContext.Current.Session["RoleId"].ToString() == "1")
+                    {
+                        <div class="col-md-6 col-sm-6"><h5 class="ad-user"><a href="@Url.Action("SendMessage", "Message")"><i class="fa fa-plus-circle" aria-hidden="true"></i> Send Message</a></h5></div>
+                    }
+                </section>
+
+                <section class="content">
+                    <!-- Info boxes -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="use-box">
+                                <center>
+                                    <div style="overflow-x:auto;">
+                                        @Html.Grid(Model).Columns(columns =>
+                                   {
+                                       columns.Add(c => c.Title).Titled("Subject");
+                                       columns.Add(c => c.Description).Titled("Description");    /*.Filterable(true)*/
+                                       if (HttpContext.Current.Session["RoleId"].ToString() == "1")
+                                       {
+                                           columns.Add(c => c.SentTo).Titled("Sent to");
+                                       }
+                                       columns.Add(c => c.CreatedDate).Titled("Date time");
+                                       columns.Add().Titled("Action")
+                                       .Encoded(false)
+                                       .Sanitized(false)
+                                       .SetWidth(120).RenderValueAs(o => "<a style='Cursor:Pointer' onclick=\"MessagePopUp('" + o.Id + "');\">Detail</a> ");
+                                   }).WithPaging(8).Sortable(true)
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-sm-block"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="@Url.Content("~/Scripts/gridmvc.js")"></script>
+
+
+
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label>Message Details</label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="test">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function MessagePopUp(id) {
+            $.ajax({
+                url: '@Url.Action("MessageDetail", "Message")',
+                data: { id: id }
+            }).done(function (response) {
+                $("#test").html(response);
+                $('#myModal').modal('show');
+            });
+        }
+
+    </script>

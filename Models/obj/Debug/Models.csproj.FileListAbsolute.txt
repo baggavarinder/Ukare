@@ -1,0 +1,36 @@
+D:\Projects\Project\Ukare\trunk\Ukare\Models\bin\Debug\Models.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Models\bin\Debug\Models.pdb
+D:\Projects\Project\Ukare\trunk\Ukare\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Projects\Project\Ukare\trunk\Ukare\Models\obj\Debug\Models.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Models\obj\Debug\Models.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Models\bin\Debug\Models.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Models\bin\Debug\Models.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Models\obj\Debug\Models.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Models\obj\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\Models.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\obj\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Models\obj\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\bin\Debug\Models.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\obj\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\obj\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\2018\New folder\Ukare\Models\bin\Debug\Models.dll.config
+E:\2018\New folder\Ukare\Models\bin\Debug\Models.dll
+E:\2018\New folder\Ukare\Models\bin\Debug\Models.pdb
+E:\2018\New folder\Ukare\Models\bin\Debug\EntityFramework.dll
+E:\2018\New folder\Ukare\Models\bin\Debug\EntityFramework.xml
+E:\2018\New folder\Ukare\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\2018\New folder\Ukare\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+E:\2018\New folder\Ukare\Models\obj\Debug\Models.dll
+E:\2018\New folder\Ukare\Models\obj\Debug\Models.pdb

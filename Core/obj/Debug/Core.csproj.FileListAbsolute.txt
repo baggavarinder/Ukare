@@ -1,0 +1,65 @@
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\Core.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\Core.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\Models.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\Models.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\obj\Debug\Core.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Core\obj\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\Core.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\obj\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Core\obj\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\Core.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\obj\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Core\obj\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\Core.dll.config
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\obj\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Core\obj\Debug\Core.pdb
+E:\2018\New folder\Ukare\Core\bin\Debug\Core.dll.config
+E:\2018\New folder\Ukare\Core\bin\Debug\Core.dll
+E:\2018\New folder\Ukare\Core\bin\Debug\Core.pdb
+E:\2018\New folder\Ukare\Core\bin\Debug\EntityFramework.dll
+E:\2018\New folder\Ukare\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\2018\New folder\Ukare\Core\bin\Debug\Models.dll
+E:\2018\New folder\Ukare\Core\bin\Debug\System.Web.Mvc.dll
+E:\2018\New folder\Ukare\Core\bin\Debug\Models.pdb
+E:\2018\New folder\Ukare\Core\bin\Debug\Models.dll.config
+E:\2018\New folder\Ukare\Core\bin\Debug\EntityFramework.xml
+E:\2018\New folder\Ukare\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\2018\New folder\Ukare\Core\bin\Debug\System.Web.Mvc.xml
+E:\2018\New folder\Ukare\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\2018\New folder\Ukare\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+E:\2018\New folder\Ukare\Core\obj\Debug\Core.dll
+E:\2018\New folder\Ukare\Core\obj\Debug\Core.pdb

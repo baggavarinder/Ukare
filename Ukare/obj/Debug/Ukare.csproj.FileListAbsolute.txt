@@ -1,0 +1,311 @@
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll.config
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Ukare.pdb
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Antlr3.Runtime.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Optimization.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Providers.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\WebGrease.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+F:\ak\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+F:\ak\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.dll
+F:\ak\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.pdb
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Ukare.pdb
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Antlr3.Runtime.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Optimization.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Providers.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\WebGrease.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.dll
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.pdb
+E:\Wandle_Healthcare_Services\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll.config
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Ukare.pdb
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Antlr3.Runtime.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Optimization.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Providers.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\WebGrease.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.dll
+D:\Projects\Project\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll.config
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Ukare.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Antlr3.Runtime.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Optimization.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Providers.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\WebGrease.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Core.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Models.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Core.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\Ukare\bin\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Ukare.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Ukare.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Antlr3.Runtime.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Newtonsoft.Json.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Net.Http.Formatting.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Http.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Http.WebHost.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Optimization.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Providers.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\WebGrease.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\Newtonsoft.Json.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Net.Http.Formatting.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Http.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Http.WebHost.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\obj\Debug\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\Ukare\obj\Debug\Ukare.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Ukare.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Antlr3.Runtime.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Helpers.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Optimization.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Providers.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Unity.Mvc5.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\WebActivatorEx.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\WebGrease.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Helpers.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\Newtonsoft.Json.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\obj\Debug\Ukare.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\Ukare\bin\GridMvc.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Ukare.dll.config
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Ukare.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Antlr3.Runtime.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\GridMvc.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Newtonsoft.Json.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Helpers.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Http.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Optimization.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Providers.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Unity.Mvc5.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\WebActivatorEx.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\WebGrease.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Helpers.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Newtonsoft.Json.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Http.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\bin\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\obj\Debug\Ukare.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\Ukare\obj\Debug\Ukare.pdb
+E:\2018\New folder\Ukare\Ukare\bin\Ukare.dll.config
+E:\2018\New folder\Ukare\Ukare\bin\Ukare.dll
+E:\2018\New folder\Ukare\Ukare\bin\Ukare.pdb
+E:\2018\New folder\Ukare\Ukare\bin\Antlr3.Runtime.dll
+E:\2018\New folder\Ukare\Ukare\bin\Core.dll
+E:\2018\New folder\Ukare\Ukare\bin\EntityFramework.dll
+E:\2018\New folder\Ukare\Ukare\bin\GridMvc.dll
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.dll
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.dll
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Web.Infrastructure.dll
+E:\2018\New folder\Ukare\Ukare\bin\Newtonsoft.Json.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Net.Http.Formatting.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Helpers.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Http.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Http.WebHost.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Mvc.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Optimization.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Providers.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Razor.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.Deployment.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.dll
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.Razor.dll
+E:\2018\New folder\Ukare\Ukare\bin\Unity.Mvc5.dll
+E:\2018\New folder\Ukare\Ukare\bin\WebActivatorEx.dll
+E:\2018\New folder\Ukare\Ukare\bin\WebGrease.dll
+E:\2018\New folder\Ukare\Ukare\bin\Models.dll
+E:\2018\New folder\Ukare\Ukare\bin\Core.pdb
+E:\2018\New folder\Ukare\Ukare\bin\Core.dll.config
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.ServiceLocation.xml
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.xml
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\2018\New folder\Ukare\Ukare\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Helpers.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Mvc.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Razor.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.Deployment.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.WebPages.Razor.xml
+E:\2018\New folder\Ukare\Ukare\bin\EntityFramework.xml
+E:\2018\New folder\Ukare\Ukare\bin\Newtonsoft.Json.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Net.Http.Formatting.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Http.xml
+E:\2018\New folder\Ukare\Ukare\bin\System.Web.Http.WebHost.xml
+E:\2018\New folder\Ukare\Ukare\bin\Models.pdb
+E:\2018\New folder\Ukare\Ukare\bin\Models.dll.config
+E:\2018\New folder\Ukare\Ukare\obj\Debug\Ukare.csprojResolveAssemblyReference.cache
+E:\2018\New folder\Ukare\Ukare\obj\Debug\Ukare.csproj.CoreCompileInputs.cache
+E:\2018\New folder\Ukare\Ukare\obj\Debug\Ukare.dll
+E:\2018\New folder\Ukare\Ukare\obj\Debug\Ukare.pdb

@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<slider>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-4"></div>
+            <div class="col-md-5 col-sm-8">
+                <div class="log-blog uplod">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="col-md-12">
+                            <h4 class="form-titl">Upload CV / Video</h4>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="addcv">
+                                <span class="fltnon" style="float: left;"><i class="fa fa-file-text" aria-hidden="true"></i></span><span class="disgrd" style="font-size: 16px; line-height: 2.2;">Add you CV</span><span class="flrinon" style="float: right;"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a> <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" style="float: left; width: 180px; margin: 0px 15px 0px 0px; line-height: 2.7;"></span>
+                            </div>
+
+                            <div class="addcv">
+                                <span class="fltnon" style="float: left;"><i class="fa fa-film" aria-hidden="true"></i></span><span class="disgrd" style="font-size: 16px; line-height: 2.2;">Add you Video</span><span class="flrinon" style="float: right;"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a> <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" style="float: left; width: 180px; margin: 0px 15px 0px 0px; line-height: 2.7;"></span>
+                            </div>
+
+                            <div class="addcv">
+                                <span class="fltnon" style="float: left;"><i class="fa fa-certificate" aria-hidden="true"></i></span><span class="disgrd" style="font-size: 16px; line-height: 2.2;">Add you Certificate</span><span class="flrinon" style="float: right;"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a> <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" style="float: left; width: 180px; margin: 0px 15px 0px 0px; line-height: 2.7;"></span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</slider>

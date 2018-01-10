@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/admin_use.css" rel="stylesheet">
+    <link href="~/Content/css/custom-bootstrap.css" rel="stylesheet">
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <!------header-start------>
+    <header>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-2 col-xs-5">
+                        <div class="hed-social">
+                            <ul class="soci-menu">
+                                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-7">
+                        <div class="head-contact">
+                            <ul class="conat-list">
+                                @if (HttpContext.Current.Session["UserId"] != null)
+                                {
+                                    
+                                    <li>Email : @HttpContext.Current.Session["UserEmailId"].ToString()</li>
+                                    
+                                }
+                                <li>Tel / fax : +441604 - 808988</li>
+                                @if (HttpContext.Current.Session["UserId"] == null)
+                                {
+                                    <li class="h-link">@Html.ActionLink("Login", "Login", "Home")</li>
+                                    <li class="h-link">@Html.ActionLink("Register", "Registration", "Home")</li>
+                                }
+                                else
+                                {
+                                    <li class="h-link">@Html.ActionLink("Log Out", "LogOut", "Home", new { area =""}, null)</li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <header-bottom>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 bggrey">
+                    <a href="/"><div class="head-logo"><img src="~/Content/images/logo-1.png" alt="header-logo" /></div></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="des-menu">
+                        <ul class="das-social">
+                            <li><input type="text" class="form-control resin" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="search..." style="height: 32px; font-size: 13px; border-radius: 20px; border: 1px solid rgb(191, 191, 191); width: 240px;"><i class="fa fa-search" aria-hidden="true"></i></li>
+                            <li><a href="@Url.Action("Index", "Message")"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header-bottom>
+
+    <!------header-end------>
+    <!------side bar------>
+    <div id="wrapper">
+        <aside class="main-sidebar" id="sidebar-wrapper">
+            <section class="sidebar" style="height: auto;">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-brand">
+                        <a href="#menu-toggle" id="menu-toggle" style="margin-top:20px;float:right;"><i class="fa fa-bars" style="font-size:20px !Important; " aria-hidden="true" aria-hidden="true"></i></a>
+                    </li>
+
+                    <li style="display:none">
+                        <div class="user-panel">
+                            <div class="pull-center">
+                                <img src="~/images/user-1.png" class="img-circle" alt="User Image">
+                            </div>
+                            <div class="pull-center">
+                                <p>Alexander Pierce</p>
+                                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="treeview">
+                        
+                        <a href="@Url.Action("Index", "Dashboard")">
+                            <i class="fa fa-home" aria-hidden="true"></i> <span>Dashboard</span>
+                            <span class="pull-right-container">
+                                @*<i class="fa fa-angle-left pull-right"></i>*@
+                            </span>
+                        </a>
+                    </li>
+
+                    @if (HttpContext.Current.Session["RoleId"].ToString() == "1")
+                    {
+                    <li class="treeview">
+                        <a href="@Url.Action("Users", "Users")">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Users</span>
+                            <span class="pull-right-container">
+                                @*<span class="label label-primary pull-right">3</span>*@
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i> <span>Groups</span>
+                            <span class="pull-right-container">
+                                @*<small class="label pull-right bg-green">new</small>*@
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> <span>Chart</span>
+                            <span class="pull-right-container">
+                                @*<i class="fa fa-angle-left pull-right"></i>*@
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cog" aria-hidden="true"></i> <span>Setting</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right dwnarrow"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="sab-menu"><a href="#"><i class="fa fa-sign-in" aria-hidden="true" style="color: #27b3f5;"></i> Manage sign-ins</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-bell" aria-hidden="true" style="color: #ec684a;"></i> Notification</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color: #dece4d;"></i> Customize menu</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-share-square" aria-hidden="true" style="color: #2e4ff5;"></i> social</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-user" aria-hidden="true"></i> organization profile</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Calender</a></li>
+                            <li class="sab-menu"><a href="#"><i class="fa fa-mobile" aria-hidden="true" style="color: #3ace79;"></i> mobile app</a></li>
+                        </ul>
+                    </li>
+                    }
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> <span>Mail</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            @if (HttpContext.Current.Session["RoleId"].ToString() == "1")
+                            {
+                                <li class="sab-menu">
+                                    <a href="@Url.Action("Index", "Message")">
+                                        <i class="fa fa-sign-in" aria-hidden="true" style="color: #27b3f5;"></i>Sent Mail
+                                    </a>
+                                </li>}
+                            else
+                            {
+                            <li class="sab-menu">
+                                <a href="@Url.Action("Index", "Message")">
+                                    <i class="fa fa-sign-in" aria-hidden="true" style="color: #27b3f5;"></i>Inbox
+                                </a>
+                            </li>}
+
+                            
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </section>
+        </aside>
+    </div>
+    <!------side bar------>
+    <!------dashboard-start------>
+    <div class="container-fluid">
+        @RenderBody();
+    </div>
+    <!------dashboard-end------>
+    @*<!------footer-start------>
+    <footer class="dashfoter">
+        <div class="container bdr-bottom">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="copi-tex">
+                        <p>Copyright © 2015 Ukare. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="icon-socil">
+                        <ul class="list-social">
+                            <a href="#"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-vimeo" aria-hidden="true"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!------footer-end------>*@
+
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>*@
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
+</body>
+</html>

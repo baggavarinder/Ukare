@@ -1,0 +1,235 @@
+﻿@model Ukare.Service.UserModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/css/jquery-ui.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+
+<slider class="regi">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-1"></div>
+            <div class="col-md-7 col-sm-10">
+                <div class="register-blog">
+                    
+                    @using (Html.BeginForm("Registration", "Home", FormMethod.Post, new { enctype ="multipart/form-data"}))
+                    {
+                        <div class="col-md-12 col-sm-12">
+                            <h4 class="form-titl">Registration</h4>
+                        </div>
+                        <div class="col-md-12 col-sm-12" style="text-align: center">
+                            <label class="text-danger">@ViewBag.ErrorMessage</label>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Title)
+                                @Html.DropDownListFor(m => m.Title, new List<SelectListItem> {
+                               new SelectListItem { Text="Select1", Value="", Selected= true},
+                               new SelectListItem { Text="Male", Value="Male"},
+                               new SelectListItem { Text="Female", Value="Female"}
+                           }, new { @class = "form-control", @style = "width:40%", @placeholder = "Select1" })
+
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Title ,"", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email)
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Enter email" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password)
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @placeholder = "Password", @type = "Password" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Telephone, new { @class = "col-2 col-form-label" })
+                                <div class="col-10">
+                                    @Html.TextBoxFor(m => m.Telephone, new { @class = "form-control", @placeholder = "Enter Telephone Number" })
+                                    <div>
+                                        @Html.ValidationMessageFor(m => m.Telephone, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.CountryIdResd, "Country of Residence")
+                                @Html.DropDownListFor(m => m.CountryIdResd,
+   new SelectList(ViewBag.Countries, "Value", "Text"),
+   "Select country",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.CountryIdResd, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                @Html.Label("Date Qualified", new { @style = "float: left; width: 100%;" })
+
+                                @Html.TextBoxFor(m => m.QualfiedDate, new { @class = "form-control", @placeholder = "Enter Date" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.QualfiedDate, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name, new { @class = "col-2 col-form-label" })
+                                <div class="col-10">
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Name" })
+                                    <div>
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.ConfirmEmail, "Confirm Email")
+                                @Html.TextBoxFor(m => m.ConfirmEmail, new { @class = "form-control", @placeholder = "Enter email" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.ConfirmEmail, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.ConfirmPassword, "Confirm Password")
+                                @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Password", @type = "Password" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.MobileNumber, "Mobile Number", new { @class = "col-2 col-form-label" })
+                                <div class="col-10">
+                                    @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control", @placeholder = "Enter Mobile Number" })
+                                    <div>
+                                        @Html.ValidationMessageFor(m => m.MobileNumber, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.CountryIdQual, "Country of Qualification")
+                                @Html.DropDownListFor(m => m.CountryIdQual,
+   new SelectList(ViewBag.Countries, "Value", "Text"),
+   "Select country",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.CountryIdQual, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.JobLocation, "Location where you want to ")
+
+                                @Html.DropDownListFor(m => m.JobLocation,
+   new SelectList(ViewBag.Countries, "Value", "Text"),
+   "Select location",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.JobLocation, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <p style="font-size: 11px; font-family: roboto; text-align: justify; margin: 0;">
+                                    If You selected 'other' above, please enter details of where you want in "other information" box below. you may specify a specific town or distance or time from specific places(e.g. 1 hour's travilling from London). If you aren't sure just tell us as much as you can and we'll get back to you if we need more information.
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputFile" style="width: 100%; margin-bottom: 0px;">File input</label>
+                                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+
+                                @Html.TextBoxFor(m=> m.file, new { @type= "file", @class="form-control-file", @name="file"})
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                @Html.TextAreaFor(m => m.ExperienceIn1, new { @class = "form-control", rows = "1", @placeholder = "Main clinical experience" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.ExperienceIn1, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Speciality1, "Speciality 1")
+                                @Html.DropDownListFor(m => m.Speciality1,
+   new SelectList(ViewBag.Specialities, "Value", "Text"),
+   "Select Speciality",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Speciality1, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Speciality3, "Speciality 3")
+                                @Html.DropDownListFor(m => m.Speciality3,
+   new SelectList(ViewBag.Specialities, "Value", "Text"),
+   "Select Speciality",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Speciality3, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <p style="font-size: 11px; font-family: roboto; text-align: justify; margin: 0 0 5px;">
+                                    please hightlight which specialities you have experience in. we will keep you update with relevant job vacancies  in those areas if you keep the box ticked  below.
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Speciality2, "Speciality 2")
+                                @Html.DropDownListFor(m => m.Speciality2,
+   new SelectList(ViewBag.Specialities, "Value", "Text"),
+   "Select Speciality",
+    new { @class = "form-control" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.Speciality2, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.TextAreaFor(m => m.ExperienceIn2, new { @class = "form-control", rows = "1", @placeholder = "Main clinical experience" })
+                                <div>
+                                    @Html.ValidationMessageFor(m => m.ExperienceIn2, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="fom-btn"><button type="submit">Register Now</button></div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</slider>
+
+
+
+
+<script type="text/javascript">
+    $("document").ready(function () {
+        $("#QualfiedDate").datepicker();
+    });
+</script>

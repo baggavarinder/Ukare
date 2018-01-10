@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UKareModelStoreContainer" CdmEntityContainer="UKareEntities">
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="UKareModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="UKareModel.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="UKareModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhotoGalleries">
+      <EntityTypeMapping TypeName="UKareModel.PhotoGallery">
+        <MappingFragment StoreEntitySet="PhotoGallery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="UKareModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteVisits">
+      <EntityTypeMapping TypeName="UKareModel.SiteVisit">
+        <MappingFragment StoreEntitySet="SiteVisit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IPaddress" ColumnName="IPaddress" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialities">
+      <EntityTypeMapping TypeName="UKareModel.Speciality">
+        <MappingFragment StoreEntitySet="Speciality">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="UKareModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="QualfiedDate" ColumnName="QualfiedDate" />
+          <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+          <ScalarProperty Name="ExperienceIn1" ColumnName="ExperienceIn1" />
+          <ScalarProperty Name="ExperienceIn2" ColumnName="ExperienceIn2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDocuments">
+      <EntityTypeMapping TypeName="UKareModel.UserDocument">
+        <MappingFragment StoreEntitySet="UserDocument">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="DocType" ColumnName="DocType" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLoggeds">
+      <EntityTypeMapping TypeName="UKareModel.UserLogged">
+        <MappingFragment StoreEntitySet="UserLogged">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IPaddress" ColumnName="IPaddress" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Country_User" TypeName="UKareModel.FK_Country_User" StoreEntitySet="Country">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="Country">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Country_User1" TypeName="UKareModel.FK_Country_User1" StoreEntitySet="Country">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="Country">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_User_Country" TypeName="UKareModel.FK_User_Country" StoreEntitySet="User">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="Id" ColumnName="CountryIdQual" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_User_Country1" TypeName="UKareModel.FK_User_Country1" StoreEntitySet="User">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="Id" ColumnName="CountryIdResd" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MenuItems_User" TypeName="UKareModel.FK_MenuItems_User" StoreEntitySet="MenuItems">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="MenuItems">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MenuItems_User1" TypeName="UKareModel.FK_MenuItems_User1" StoreEntitySet="MenuItems">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="MenuItems">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_News_User" TypeName="UKareModel.FK_News_User" StoreEntitySet="News">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="News">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_News_User1" TypeName="UKareModel.FK_News_User1" StoreEntitySet="News">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="News">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PhotoGallery_User" TypeName="UKareModel.FK_PhotoGallery_User" StoreEntitySet="PhotoGallery">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="PhotoGallery">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PhotoGallery_User1" TypeName="UKareModel.FK_PhotoGallery_User1" StoreEntitySet="PhotoGallery">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="PhotoGallery">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Roles_User" TypeName="UKareModel.FK_Roles_User" StoreEntitySet="Roles">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Roles_User1" TypeName="UKareModel.FK_Roles_User1" StoreEntitySet="Roles">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Speciality_User" TypeName="UKareModel.FK_Speciality_User" StoreEntitySet="Speciality">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="Speciality">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Speciality_User1" TypeName="UKareModel.FK_Speciality_User1" StoreEntitySet="Speciality">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="Speciality">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserDocument_User" TypeName="UKareModel.FK_UserDocument_User" StoreEntitySet="UserDocument">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="UserDocument">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserDocument_User1" TypeName="UKareModel.FK_UserDocument_User1" StoreEntitySet="UserDocument">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="UserDocument">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserDocument_User2" TypeName="UKareModel.FK_UserDocument_User2" StoreEntitySet="UserDocument">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="UserDocument">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserLogged_User" TypeName="UKareModel.FK_UserLogged_User" StoreEntitySet="UserLogged">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy" />
+      </EndProperty>
+      <EndProperty Name="UserLogged">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="CreatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserLogged_User1" TypeName="UKareModel.FK_UserLogged_User1" StoreEntitySet="UserLogged">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UpdatedBy" />
+      </EndProperty>
+      <EndProperty Name="UserLogged">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UpdatedBy" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserLogged_User2" TypeName="UKareModel.FK_UserLogged_User2" StoreEntitySet="UserLogged">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="UserLogged">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RoleMenu" TypeName="UKareModel.RoleMenu" StoreEntitySet="RoleMenu">
+      <EndProperty Name="MenuItems">
+        <ScalarProperty Name="Id" ColumnName="MenuId" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserRoles" TypeName="UKareModel.UserRoles" StoreEntitySet="UserRoles">
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserSpeciality" TypeName="UKareModel.UserSpeciality" StoreEntitySet="UserSpeciality">
+      <EndProperty Name="Speciality">
+        <ScalarProperty Name="Id" ColumnName="SpecialityId" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

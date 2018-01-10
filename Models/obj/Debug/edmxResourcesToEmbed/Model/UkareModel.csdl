@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UKareModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="UKareEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Countries" EntityType="UKareModel.Country" />
+    <EntitySet Name="MenuItems" EntityType="UKareModel.MenuItem" />
+    <EntitySet Name="Messages" EntityType="UKareModel.Message" />
+    <EntitySet Name="MessageTypes" EntityType="UKareModel.MessageType" />
+    <EntitySet Name="Permissions" EntityType="UKareModel.Permission" />
+    <EntitySet Name="PhotoGalleries" EntityType="UKareModel.PhotoGallery" />
+    <EntitySet Name="RoleMenus" EntityType="UKareModel.RoleMenu" />
+    <EntitySet Name="Roles" EntityType="UKareModel.Role" />
+    <EntitySet Name="SiteVisits" EntityType="UKareModel.SiteVisit" />
+    <EntitySet Name="Specialities" EntityType="UKareModel.Speciality" />
+    <EntitySet Name="Users" EntityType="UKareModel.User" />
+    <EntitySet Name="UserDocuments" EntityType="UKareModel.UserDocument" />
+    <EntitySet Name="UserLoggeds" EntityType="UKareModel.UserLogged" />
+    <EntitySet Name="VerificationTokens" EntityType="UKareModel.VerificationToken" />
+    <AssociationSet Name="FK_User_Country" Association="UKareModel.FK_User_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Country1" Association="UKareModel.FK_User_Country1">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_MessageType" Association="UKareModel.FK_Message_MessageType">
+      <End Role="MessageType" EntitySet="MessageTypes" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_User" Association="UKareModel.FK_Message_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permissions_Roles" Association="UKareModel.FK_Permissions_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Permission" EntitySet="Permissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Roles" Association="UKareModel.FK_User_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDocument_User" Association="UKareModel.FK_UserDocument_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDocument" EntitySet="UserDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VerificationTokens_User" Association="UKareModel.FK_VerificationTokens_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="VerificationToken" EntitySet="VerificationTokens" />
+    </AssociationSet>
+    <AssociationSet Name="UserSpeciality" Association="UKareModel.UserSpeciality">
+      <End Role="Speciality" EntitySet="Specialities" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="UKareModel.FK_User_Country" FromRole="Country" ToRole="User" />
+    <NavigationProperty Name="Users1" Relationship="UKareModel.FK_User_Country1" FromRole="Country" ToRole="User" />
+  </EntityType>
+  <EntityType Name="MenuItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Link" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MessageTypeId" Type="Int32" Nullable="false" />
+    <Property Name="MessageFor" Type="Int32" />
+    <Property Name="ImageUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <NavigationProperty Name="MessageType" Relationship="UKareModel.FK_Message_MessageType" FromRole="Message" ToRole="MessageType" />
+    <NavigationProperty Name="User" Relationship="UKareModel.FK_Message_User" FromRole="Message" ToRole="User" />
+  </EntityType>
+  <EntityType Name="MessageType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessageType1" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Messages" Relationship="UKareModel.FK_Message_MessageType" FromRole="MessageType" ToRole="Message" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="ControllerName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ActionName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Role" Relationship="UKareModel.FK_Permissions_Roles" FromRole="Permission" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="PhotoGallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RoleMenu">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <NavigationProperty Name="Permissions" Relationship="UKareModel.FK_Permissions_Roles" FromRole="Role" ToRole="Permission" />
+    <NavigationProperty Name="Users" Relationship="UKareModel.FK_User_Roles" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="SiteVisit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IPaddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="LastVisitedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VisitCount" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Speciality">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="UKareModel.UserSpeciality" FromRole="Speciality" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CountryIdResd" Type="Int32" Nullable="false" />
+    <Property Name="CountryIdQual" Type="Int32" Nullable="false" />
+    <Property Name="QualfiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="JobLocation" Type="Int32" Nullable="false" />
+    <Property Name="ExperienceIn1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ExperienceIn2" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedByUserId" Type="Int32" />
+    <Property Name="UpdatedByUserId" Type="Int32" />
+    <Property Name="CreatedOnDatetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOnDatetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="UKareModel.FK_User_Country" FromRole="User" ToRole="Country" />
+    <NavigationProperty Name="Country1" Relationship="UKareModel.FK_User_Country1" FromRole="User" ToRole="Country" />
+    <NavigationProperty Name="Messages" Relationship="UKareModel.FK_Message_User" FromRole="User" ToRole="Message" />
+    <NavigationProperty Name="Role" Relationship="UKareModel.FK_User_Roles" FromRole="User" ToRole="Role" />
+    <NavigationProperty Name="UserDocuments" Relationship="UKareModel.FK_UserDocument_User" FromRole="User" ToRole="UserDocument" />
+    <NavigationProperty Name="VerificationTokens" Relationship="UKareModel.FK_VerificationTokens_User" FromRole="User" ToRole="VerificationToken" />
+    <NavigationProperty Name="Specialities" Relationship="UKareModel.UserSpeciality" FromRole="User" ToRole="Speciality" />
+  </EntityType>
+  <EntityType Name="UserDocument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DocType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="UKareModel.FK_UserDocument_User" FromRole="UserDocument" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserLogged">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="IPaddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VerificationToken">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Token" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GeneratedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="User" Relationship="UKareModel.FK_VerificationTokens_User" FromRole="VerificationToken" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_User_Country">
+    <End Type="UKareModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="UKareModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CountryIdQual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Country1">
+    <End Type="UKareModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="UKareModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CountryIdResd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_MessageType">
+    <End Type="UKareModel.MessageType" Role="MessageType" Multiplicity="1" />
+    <End Type="UKareModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MessageType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="MessageTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_User">
+    <End Type="UKareModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="UKareModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="MessageFor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permissions_Roles">
+    <End Type="UKareModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="UKareModel.Permission" Role="Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Permission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Roles">
+    <End Type="UKareModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="UKareModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDocument_User">
+    <End Type="UKareModel.User" Role="User" Multiplicity="1" />
+    <End Type="UKareModel.UserDocument" Role="UserDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserDocument">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VerificationTokens_User">
+    <End Type="UKareModel.User" Role="User" Multiplicity="1" />
+    <End Type="UKareModel.VerificationToken" Role="VerificationToken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VerificationToken">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserSpeciality">
+    <End Type="UKareModel.Speciality" Role="Speciality" Multiplicity="*" />
+    <End Type="UKareModel.User" Role="User" Multiplicity="*" />
+  </Association>
+</Schema>

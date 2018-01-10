@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UKareModels.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="MenuItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Icon" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="PhotoGallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Path" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="RoleMenu">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="MenuId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="SiteVisit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IPaddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="DateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Speciality">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telephone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MobileNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CountryIdResd" Type="int" Nullable="false" />
+    <Property Name="CountryIdQual" Type="int" Nullable="false" />
+    <Property Name="QualfiedDate" Type="datetime" Nullable="false" />
+    <Property Name="JobLocation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExperienceIn1" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ExperienceIn2" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserDocument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Path" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="DocType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="UserLogged">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IPaddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSpeciality">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="SpecialityId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="SpecialityId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Country_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Country" Type="Self.Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Country">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Country_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Country" Type="Self.Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Country">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItems">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItems">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotoGallery_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="PhotoGallery" Type="Self.PhotoGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhotoGallery">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotoGallery_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="PhotoGallery" Type="Self.PhotoGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhotoGallery">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleMenu_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="1" />
+    <End Role="RoleMenu" Type="Self.RoleMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RoleMenu">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleMenu_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="RoleMenu" Type="Self.RoleMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RoleMenu">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Speciality_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Speciality" Type="Self.Speciality" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Speciality">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Speciality_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Speciality" Type="Self.Speciality" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Speciality">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Country">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CountryIdQual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Country1">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CountryIdResd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDocument_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserDocument" Type="Self.UserDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserDocument">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDocument_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserDocument" Type="Self.UserDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserDocument">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDocument_User2">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserDocument" Type="Self.UserDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserDocument">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLogged_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserLogged" Type="Self.UserLogged" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogged">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLogged_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserLogged" Type="Self.UserLogged" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogged">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLogged_User2">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserLogged" Type="Self.UserLogged" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogged">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSpeciality_User">
+    <End Role="Speciality" Type="Self.Speciality" Multiplicity="1" />
+    <End Role="UserSpeciality" Type="Self.UserSpeciality" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Speciality">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSpeciality">
+        <PropertyRef Name="SpecialityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSpeciality_User1">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserSpeciality" Type="Self.UserSpeciality" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSpeciality">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UKareModelsStoreContainer">
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuItems" EntityType="Self.MenuItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhotoGallery" EntityType="Self.PhotoGallery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleMenu" EntityType="Self.RoleMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SiteVisit" EntityType="Self.SiteVisit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Speciality" EntityType="Self.Speciality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserDocument" EntityType="Self.UserDocument" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserLogged" EntityType="Self.UserLogged" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserSpeciality" EntityType="Self.UserSpeciality" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Country_User" Association="Self.FK_Country_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Country" EntitySet="Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Country_User1" Association="Self.FK_Country_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="Country" EntitySet="Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_User" Association="Self.FK_MenuItems_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="MenuItems" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_User1" Association="Self.FK_MenuItems_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="MenuItems" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_User" Association="Self.FK_News_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_User1" Association="Self.FK_News_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotoGallery_User" Association="Self.FK_PhotoGallery_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="PhotoGallery" EntitySet="PhotoGallery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotoGallery_User1" Association="Self.FK_PhotoGallery_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="PhotoGallery" EntitySet="PhotoGallery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleMenu_MenuItems" Association="Self.FK_RoleMenu_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="RoleMenu" EntitySet="RoleMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleMenu_Roles" Association="Self.FK_RoleMenu_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RoleMenu" EntitySet="RoleMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_User" Association="Self.FK_Roles_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_User1" Association="Self.FK_Roles_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Speciality_User" Association="Self.FK_Speciality_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Speciality" EntitySet="Speciality" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Speciality_User1" Association="Self.FK_Speciality_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="Speciality" EntitySet="Speciality" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Country" Association="Self.FK_User_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Country1" Association="Self.FK_User_Country1">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDocument_User" Association="Self.FK_UserDocument_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserDocument" EntitySet="UserDocument" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDocument_User1" Association="Self.FK_UserDocument_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserDocument" EntitySet="UserDocument" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDocument_User2" Association="Self.FK_UserDocument_User2">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserDocument" EntitySet="UserDocument" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLogged_User" Association="Self.FK_UserLogged_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserLogged" EntitySet="UserLogged" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLogged_User1" Association="Self.FK_UserLogged_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserLogged" EntitySet="UserLogged" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLogged_User2" Association="Self.FK_UserLogged_User2">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserLogged" EntitySet="UserLogged" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_Roles" Association="Self.FK_UserRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_User" Association="Self.FK_UserRoles_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSpeciality_User" Association="Self.FK_UserSpeciality_User">
+      <End Role="Speciality" EntitySet="Speciality" />
+      <End Role="UserSpeciality" EntitySet="UserSpeciality" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSpeciality_User1" Association="Self.FK_UserSpeciality_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserSpeciality" EntitySet="UserSpeciality" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,98 @@
+﻿@model Ukare.Service.UserModel
+@{
+    ViewBag.Title = "AddNewUser";
+    Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <div class="content-wrapper" style="min-height: 750px;">
+            <section class="content-header">
+                <h3>Add New User</h3>
+            </section>
+
+            <section class="content">
+                <!-- Info boxes -->
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 col-xs-12">
+                        <div class="use-box fombox">
+                            <h5>Detail Form</h5>
+                            @using (Html.BeginForm("AddNewUser", "Users", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(m => m.id)
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-2 col-form-label ulable">User Name</label>
+                                        <div class="col-10">
+                                            @*<input class="form-control uinput" type="text" value="" id="example-text-input" placeholder="Enter User Name">*@
+                                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control uinput", @placeholder = "Enter user name" })
+                                            <div>
+                                                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-2 col-form-label ulable">Name</label>
+                                        <div class="col-10">
+                                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control uinput", @placeholder = "Enter name" })
+                                            <div>
+                                                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="ulable">Password</label>
+
+                                        @Html.TextBoxFor(m => m.Password, new { @class = "form-control uinput", @placeholder = "Enter Password", @type = "Password" })
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-2 col-form-label ulable">Email</label>
+                                        <div class="col-10">
+
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control uinput", @placeholder = "Enter Email" })
+                                            <div>
+                                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-2 col-form-label ulable">Role</label>
+                                        <div class="col-10">
+                                            @Html.DropDownListFor(m => m.RoleId,
+   new SelectList(ViewBag.Roles, "RoleId", "Name", Model.RoleId),
+   "Select role",
+    new { @class = "form-control uinput" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="ulable">Confirm Password</label>
+                                        @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control uinput", @placeholder = "Password", @type = "Password" })
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="sevbtn" type="submit">Save</button>
+                                        <button class="clrbtn" onclick="window.history.go(-1);">Back</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

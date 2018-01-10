@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Ukare.Service.UserModel>
+    @using GridMvc.Html
+    @{
+        Layout = "~/Areas/AdminArea/Views/Shared/_Layout.cshtml";
+        ViewBag.Title = "Users";
+    }
+
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+    @*<link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" />*@
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.js")"></script>
+                      <script src="~/Content/js/bootstrap.js"></script>
+                      <script src="@Url.Content("~/Scripts/bootbox.min.js")"></script>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="content-wrapper" style="min-height: 750px;">
+                <section class="content-header">
+                    <div class="col-md-6 col-sm-6"><h3 class="use-titl">User Information</h3></div>
+                    <div class="col-md-6 col-sm-6"><h5 class="ad-user"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add User</a></h5></div>
+                </section>
+
+                <section class="content">
+                    <!-- Info boxes -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="use-box">
+                                <center>
+                                    <div style="overflow-x:auto;">
+                                        @Html.Grid(Model).Columns(columns =>
+                                   {
+                                       columns.Add(c => c.id).Titled("User Id");
+                                       columns.Add(c => c.UserName).Titled("User Name");    /*.Filterable(true)*/
+                                       columns.Add(c => c.Email).Titled("User Email");
+                                       columns.Add().Titled("Action")
+                                       .Encoded(false)
+                                       .Sanitized(false)
+                                       .SetWidth(120).RenderValueAs(o => "<a style='Cursor:Pointer' href='/Admin/Users/AddNewUser/"+ o.id +"'>Edit</a> <a style='Cursor:Pointer' onclick=\"confirmDelete('" + o.id + "');\">Delete</a>");
+                                   }).WithPaging(8).Sortable(true)
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-sm-block"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="@Url.Content("~/Scripts/gridmvc.js")"></script>
+    <script>
+        function confirmDelete(id) {
+            bootbox.confirm("Are you sure you want to delete?", function (result) {
+
+                if (result) {
+                    $.ajax({
+                        url: '@Url.Action("Delete", "Users")',
+                        data: { id: id }
+                    }).done(function () {
+                        window.location.reload();
+                    });
+                }
+            });
+            }
+    </script>

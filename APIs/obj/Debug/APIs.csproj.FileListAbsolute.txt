@@ -1,0 +1,67 @@
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\APIs.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\APIs.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\Core.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\EntityFramework.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\Models.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\Core.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\Models.pdb
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\bin\Debug\EntityFramework.xml
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.csprojResolveAssemblyReference.cache
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.dll
+D:\Projects\Project - Copy\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\obj\Debug\APIs.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\obj\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare - Copy\APIs\obj\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\APIs.dll.config
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Ukare\APIs\obj\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\APIs.dll.config
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\APIs.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\Core.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\EntityFramework.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\Models.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\Core.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\Models.pdb
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\EntityFramework.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\obj\Debug\APIs.csprojResolveAssemblyReference.cache
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\obj\Debug\APIs.dll
+D:\Projects\Ukare\Ukare\trunk\Hosted\Ukare\APIs\obj\Debug\APIs.pdb
+E:\2018\New folder\Ukare\APIs\bin\Debug\APIs.dll.config
+E:\2018\New folder\Ukare\APIs\bin\Debug\APIs.dll
+E:\2018\New folder\Ukare\APIs\bin\Debug\APIs.pdb
+E:\2018\New folder\Ukare\APIs\bin\Debug\Core.dll
+E:\2018\New folder\Ukare\APIs\bin\Debug\EntityFramework.dll
+E:\2018\New folder\Ukare\APIs\bin\Debug\Models.dll
+E:\2018\New folder\Ukare\APIs\bin\Debug\System.Web.Mvc.dll
+E:\2018\New folder\Ukare\APIs\bin\Debug\Core.pdb
+E:\2018\New folder\Ukare\APIs\bin\Debug\Core.dll.config
+E:\2018\New folder\Ukare\APIs\bin\Debug\Models.pdb
+E:\2018\New folder\Ukare\APIs\bin\Debug\Models.dll.config
+E:\2018\New folder\Ukare\APIs\bin\Debug\EntityFramework.xml
+E:\2018\New folder\Ukare\APIs\bin\Debug\System.Web.Mvc.xml
+E:\2018\New folder\Ukare\APIs\obj\Debug\APIs.csprojResolveAssemblyReference.cache
+E:\2018\New folder\Ukare\APIs\obj\Debug\APIs.csproj.CoreCompileInputs.cache
+E:\2018\New folder\Ukare\APIs\obj\Debug\APIs.dll
+E:\2018\New folder\Ukare\APIs\obj\Debug\APIs.pdb

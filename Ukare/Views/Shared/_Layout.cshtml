@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome UKare.co</title>
+
+    <!-- Bootstrap -->
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link href="~/Content/css/custom-bootstrap.css" rel="stylesheet">
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <!------header-start------>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-5">
+                    <div class="hed-social">
+                        <ul class="soci-menu">
+                            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7">
+                    <div class="head-contact">
+                        <ul class="conat-list">
+                            @if (HttpContext.Current.Session["UserId"] != null)
+                            {
+                                if (HttpContext.Current.Session["RoleId"].ToString()  == "1")
+                                {
+                            <li class="h-link"><a href="@Url.Action("Index", "Dashboard", new { area ="AdminArea"},null)">Admin Panel</a></li>}
+                                <li>Email : @HttpContext.Current.Session["UserEmailId"].ToString()</li>
+                            }
+                            <li>Tel / fax : +441604 - 808988</li>
+                            @if (HttpContext.Current.Session["UserId"] == null)
+                            {
+                                <li class="h-link">@Html.ActionLink("Login", "Login", "Home")</li>
+                                <li class="h-link">@Html.ActionLink("Register", "Registration", "Home")</li>
+                            }
+                            else
+                            {
+                                <li class="h-link">@Html.ActionLink("Log Out", "LogOut", "Home")</li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header-bottom>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-7">
+                    <a href="~/Home/Index"><div class="head-logo"><img src="/Content/images/logo-1.png" alt="header-logo" /></div></a>
+                </div>
+
+                <div class="col-md-9 col-sm-10 col-xs-5">
+                    <div class="head-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid ped00">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>@Html.ActionLink("HOME", "Index", "Home")</li>  @*class="active"*@
+                                        <li><a href="#">STAFFINGPAGE</a></li>
+                                        <li><a href="#">HIRINGPAGE</a></li>
+                                        <li><a href="#">CLIENT</a></li>
+                                        <li><a href="#">TRAINING</a></li>
+                                        <li><a href="#">EXPERTISE</a></li>
+                                        <li><a href="#">JOBSEEKERS</a></li>
+                                        <li><a href="#">ASSESSMENT</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+
+
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header-bottom>
+    <!------header-end------>
+    @RenderBody()
+
+    <!------footer-start------>
+
+    <footer>
+        <div class="container bdr-bottom">
+            <div class="row">
+                <div class="col-md-10 col-sm-9">
+                    <div class="copi-tex">
+                        <p>Copyright © 2015 Ukare. All rights reserved.</p>
+                        <a href="#"><img class="gool" style="float: right; margin: -33px 7px 0px; width: 115px; height: 41px;" src="~/Content/images/android icon.png" alt="gol" /></a>  <a href="#"><img class="appl" style="float: right; margin: -32px 0px 0px; width: 115px;" src="~/Content/images/app_store.png" alt="apl" /></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-12">
+                    <div class="icon-socil">
+                        <ul class="list-social">
+                            <a href="#"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                            <a href="#"><li><i class="fa fa-vimeo" aria-hidden="true"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="foot-last">
+                        <p>
+                            <span>DISCLAIMER :</span> UKare has no responsibility and gives no warranty over the accuracy or the completeness of the website content. UKare reserves the right to make changes as the institution sees as appropriate at any time. Dependence of the content should be made by the user on the content. The content should be confirmed by the originating or authorizing department or other body. UKareassumes no responsibility for any representation, implied or expressed, concerning the efficacy, appropriateness or suitability of any treatment or product.
+                        </p>
+                        <p>
+                            <span>UKare</span>does not honor any responsibility for the information that appears on the website as well as the links that are associated or mentioned within the website. UKaredoes not accept any responsibility or liability for any loss or claim arising, directly or indirectly, from any error or inaccuracy in any of the material on our website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!------footer-end------>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>*@
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</body>
+</html>
